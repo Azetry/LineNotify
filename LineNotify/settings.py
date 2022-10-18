@@ -11,6 +11,8 @@ https://docs.djangoproject.com/en/4.1/ref/settings/
 """
 
 from pathlib import Path
+from dotenv import load_dotenv
+load_dotenv()
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -25,12 +27,14 @@ SECRET_KEY = 'django-insecure-v6)l4er3q#@r7)a-l7u@9^@udwr)rgzc77h&1@!!6352dv!msn
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['azetry-linenotify.herokuapp.com']
+ALLOWED_HOSTS = ['localhost', 'azetry-linenotify.herokuapp.com']
 
 
 # Application definition
 
 INSTALLED_APPS = [
+    'backend.apps.BackendConfig',
+    'frontend.apps.FrontendConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
