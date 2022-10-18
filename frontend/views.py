@@ -1,3 +1,4 @@
+import code
 from http import client
 from django.shortcuts import render, redirect
 from django.http import HttpResponse, JsonResponse
@@ -62,6 +63,7 @@ def callback(request):
     res = request.GET.dict()
 
     infos = accessToken(res['code'])
+    print(res['code'])
     print(infos)
     
     return JsonResponse({'infos': "Done"})
