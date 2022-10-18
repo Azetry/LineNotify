@@ -62,5 +62,6 @@ def callback(request):
     res = request.GET.dict()
 
     infos = accessToken(res['code'])
+    print(infos)
     
-    return JsonResponse(infos)
+    return JsonResponse({'infos': "Done"})
