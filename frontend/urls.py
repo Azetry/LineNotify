@@ -4,6 +4,6 @@ from . import views
 
 app_name = 'frontend'
 urlpatterns = [
-    path('test', views.authorize, name='test'),
+    path('test', views.login, name='test'),
     path('login/callback', views.callback, name='callback')
 ]
