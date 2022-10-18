@@ -64,6 +64,6 @@ def callback(request):
 
     infos = accessToken(res['code'])
     print(res['code'])
-    print(infos)
+    print(infos.text)
     
     return JsonResponse({'infos': "Done"})
