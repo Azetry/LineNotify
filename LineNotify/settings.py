@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-v6)l4er3q#@r7)a-l7u@9^@udwr)rgzc77h&1@!!6352dv!msn
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['azetry-linenotify.herokuapp.com']
 
 
 # Application definition
